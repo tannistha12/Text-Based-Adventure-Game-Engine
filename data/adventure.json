@@ -1,0 +1,51 @@
+{
+  "playerStart": "Cave Entrance",
+
+  "items": [
+    {
+      "name": "Lantern",
+      "description": "A small lantern that can light up dark areas."
+    },
+    {
+      "name": "Rope",
+      "description": "A sturdy rope that can be used to climb or tie things together."
+    },
+    {
+      "name": "Map",
+      "description": "A map of the cave system, showing various paths and locations."
+    }
+  ],
+
+  "rooms": [
+    {
+      "name": "Cave Entrance",
+      "description": "You stand at the entrance of a dark cave. The air is damp and the sound of dripping water echoes from within.",
+      "exits": {
+        "north": "Dark Tunnel"
+      },
+      "items": []
+    },
+    {
+      "name": "Dark Tunnel",
+      "description": "The tunnel is narrow and the walls are slick with moisture. You can hear faint noises deeper inside.",
+      "exits": {
+        "south": "Cave Entrance",
+        "east": "Hidden Chamber"
+      },
+      "items": []
+    },
+    {
+      "name": "Hidden Chamber",
+      "description": "This chamber is dimly lit by glowing crystals embedded in the walls. A treasure chest sits in the corner.",
+      "exits": {
+        "west": "Dark Tunnel"
+      },
+      "items": [
+        {
+          "name": "Treasure Chest",
+          "description": "A sturdy chest that looks like it might contain something valuable."
+        }
+      ]
+    }
+  ]
+}
